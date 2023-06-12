@@ -17,17 +17,18 @@ body {
   background-image: url("/image/header.jpg");
   background-size: cover;
 }
-
+/* Style for the navigation bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+/* Style for the logo */
 .logo h1 {
   margin: 0;
 }
 
+/* Style for the navigation links */
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,26 +45,29 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Style for the user info */
 .user-info {
   display: flex;
   align-items: center;
 }
 
+/* Style for the user avatar */
 .avatar img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
+/* Style for the login/logout link */
 .login-logout a {
   color: #fff;
 }
 
+/* Style for the main content section */
 main {
   padding: 60px;
 }
-
+/* Style for the form */
 form {
   display: grid;
   grid-template-columns: 1fr;
@@ -71,11 +75,11 @@ form {
   max-width: 400px;
   margin: 0 auto;
 }
-
+/* Style for form labels */
 label {
   font-weight: bold;
 }
-
+/* Style for form inputs */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -84,7 +88,7 @@ textarea {
   border-radius: 4px;
   border: 1px solid #ccc;
 }
-
+/* Style for the submit button */
 input[type="submit"] {
   background-color: hsla(27, 43%, 52%, 0.79);
   color: white;
@@ -94,7 +98,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
+/* Hover style for the submit button */
 input[type="submit"]:hover {
   background-color: hsla(27, 63%, 38%, 0.79);
 }
@@ -153,6 +157,7 @@ input[type="submit"]:hover {
   background-size: cover;
 }
 
+/* Style for social media links */
 .social-media {
   display: flex;
   justify-content: center;
@@ -176,6 +181,7 @@ input[type="submit"]:hover {
   color: #bbb;
 }
 
+/* Style for the grid container */
 .grid-container {
   display: flex;
   flex-direction: column;
