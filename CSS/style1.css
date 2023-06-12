@@ -1,3 +1,4 @@
+/* Set up the basic styling and layout for the page */
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -9,6 +10,112 @@ body {
   background-size: cover;
 }
 
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .blog-post {
+    grid-template-columns: 1fr;
+  }
+  
+  .author-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .author-info img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  
+  .article-content {
+    font-size: 14px;
+    max-height: none;
+  }
+  
+  .article h2 {
+    margin: 15px 0 5px;
+  }
+  
+  .article h3 {
+    margin: 5px 0;
+  }
+  
+  .article ul {
+    padding-left: 10px;
+  }
+}
+
+/* Media query for screens between 768px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog-post {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .author-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .author-info img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content {
+    font-size: 16px;
+    max-height: 300px;
+  }
+  
+  .article h2 {
+    margin: 20px 0 10px;
+  }
+  
+  .article h3 {
+    margin: 10px 0;
+  }
+  
+  .article ul {
+    padding-left: 20px;
+  }
+}
+
+/* Media query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+  .blog-post {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .author-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .author-info img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content {
+    font-size: 16px;
+    max-height: 400px;
+  }
+  
+  .article h2 {
+    margin: 20px 0 10px;
+  }
+  
+  .article h3 {
+    margin: 10px 0;
+  }
+  
+  .article ul {
+    padding-left: 20px;
+  }
+}
+
+/* Style for the header section */
 .header {
   text-align: center;
   color: #fff;
@@ -68,7 +175,7 @@ nav ul li a {
   margin: 20px;
 }
 
-/* CSS for the author info */
+/*  Style for the author info */ 
 .author-info {
   display: flex;
   flex-direction: column;
@@ -133,7 +240,7 @@ nav ul li a {
   padding-left: 20px;
 }
 
-
+/*  Style for the footer */ 
 .footer {
   color: #fff;
   padding: 40px 20px;
