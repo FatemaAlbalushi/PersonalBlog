@@ -1,0 +1,57 @@
+/* Media query for screens up to 768px */
+@media screen and (max-width: 768px) {
+  .blog-post {
+    grid-template-columns: 1fr;
+  }
+
+  .author-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-info img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .article-content {
+    font-size: 14px;
+    max-height: none;
+  }
+
+  .article h2 {
+    margin: 15px 0 5px;
+  }
+
+  .article h3 {
+    margin: 5px 0;
+  }
+
+  .article ul {
+    padding-left: 10px;
+  }
+}
+
+/* Media query for screens between 768px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog-post {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .author-info {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .author-info img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 8px;
+  }
+
+  .article-content {
+    font-size: 15px;
+    max-height: 350px;
+  }
+}
